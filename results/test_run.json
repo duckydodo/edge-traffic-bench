@@ -1,0 +1,87 @@
+{
+  "profile_name": "edge_1c",
+  "warmup_frames": 5,
+  "warmup_frames_processed": 5,
+  "measured_frames_processed": 10,
+  "effective_fps": 29.86,
+  "pipeline_fps": 29.86,
+  "stages": {
+    "t_decode_ms": {
+      "mean": 0.003,
+      "std": 0.001,
+      "p50": 0.003,
+      "p95": 0.004,
+      "p99": 0.005
+    },
+    "t_preprocess_ms": {
+      "mean": 1.164,
+      "std": 0.148,
+      "p50": 1.101,
+      "p95": 1.442,
+      "p99": 1.495
+    },
+    "t_inference_ms": {
+      "mean": 31.75,
+      "std": 5.137,
+      "p50": 28.512,
+      "p95": 41.523,
+      "p99": 41.526
+    },
+    "t_postprocess_ms": {
+      "mean": 0.569,
+      "std": 0.047,
+      "p50": 0.562,
+      "p95": 0.651,
+      "p99": 0.674
+    },
+    "t_total_ms": {
+      "mean": 33.487,
+      "std": 5.071,
+      "p50": 30.373,
+      "p95": 43.095,
+      "p99": 43.095
+    }
+  },
+  "memory_uss_mb": {
+    "baseline_uss_mb": 363.6,
+    "model_load_uss_mb": 385.75,
+    "peak_inference_uss_mb": 425.29,
+    "samples_count": 7
+  },
+  "hardware": {
+    "cpu_model": "AMD Ryzen 5 7530U with Radeon Graphics",
+    "vendor_id": "AuthenticAMD",
+    "architecture": "x86_64",
+    "physical_cores": 6,
+    "logical_cores": 12,
+    "has_avx2": true,
+    "has_vnni": false,
+    "total_memory_gb": 14.44,
+    "primary_physical_cpus": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10
+    ]
+  },
+  "cpu_affinity": [
+    0
+  ],
+  "analytics": {
+    "total_inbound": 0,
+    "total_outbound": 0,
+    "total_crossings": 0,
+    "by_class": {}
+  },
+  "pipeline": {
+    "engine": "ORT_INT8_TierS",
+    "tracker": "CBIoUTracker",
+    "profile": "edge_1c",
+    "stride": 1,
+    "imgsz": 320,
+    "warmup_frames": 5,
+    "frames_processed": 15
+  }
+}
